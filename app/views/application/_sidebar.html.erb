@@ -7,7 +7,9 @@
       <span class="flex items-center justify-center bg-gray-300 h-4 w-4 rounded-full"><%= @rooms.size %></span>
     </div>
     <div class="flex flex-col space-y-1 mt-4 -mx-2 h-48 overflow-y-auto">
-      
+      <% @rooms.each do |room| %>
+        <%= render 'rooms/sidebar_room', room: room %>
+      <% end %>
     </div>
   </div>
 </div>

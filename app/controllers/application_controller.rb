@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   before_action :set_current_user
 
   def home
-    @rooms = []
+    @rooms = Room.all
   end
 
   private
