@@ -53,6 +53,7 @@ gem "bootsnap", ">= 1.4.4", require: false
 gem 'devise', git: 'https://github.com/strobilomyces/devise', branch: 'patch-1'
 gem 'hotwire-rails'
 gem 'letter_opener'
+gem 'image_processing'
 
 group :development, :test do
   # Start debugger with binding.b [https://github.com/ruby/debug]
