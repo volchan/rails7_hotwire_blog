@@ -6,6 +6,7 @@ class ApplicationController < ActionController::Base
 
   def home
     @rooms = Room.all
+    @room = Room.first
   end
 
   private

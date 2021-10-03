@@ -14,4 +14,10 @@ class User < ApplicationRecord
   def username=(value)
     super value.to_s.titleize
   end
+
+  def display_avatar
+    return avatar if avatar.attached?
+
+    Identicon.data_url_for(username, 256)
+  end
 end
